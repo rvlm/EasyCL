@@ -1,6 +1,7 @@
 INCLUDE(ExternalProject)
 
 #message("CMAKE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX}")
+set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_BINARY_DIR}")
 ExternalProject_Add(
     clew-external
     STAMP_DIR ${CMAKE_BINARY_DIR}/clew/stamp
